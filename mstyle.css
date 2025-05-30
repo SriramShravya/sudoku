@@ -1,0 +1,43 @@
+body{
+    background-color: #dccbcb;
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+nav{
+    font-size: 4.5vmin;
+    display: flex;
+    justify-content: center;
+    height: 5vmin;
+    margin-top: 5px;
+    padding:0px 30px 0px 20px ;
+}
+
+
+.btns{
+    padding-top: 10vh;
+    position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 5vh;
+}
+
+button{
+    width: 30vh;
+    height: 15vh;
+    border-radius: 1.5vh;
+    font-size: large;
+    font-family:"Chelsea Market", system-ui ;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button:hover{
+    background-color: #dccbcb;
+}
+
+

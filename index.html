@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDOKU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="mstyle.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo" style="color: #cd917c;">
+                SUDOKU
+            </a>
+        </div>
+    </nav>
+
+    <div class="btns">
+        <h2>Fill the empty box with a number so that it doesnt match its row,column and 3*3 square grid</h2> 
+
+        <button   data-difficulty="0">EASY</button>
+
+        <button  data-difficulty="1">MEDIUM</button>
+
+        <button   data-difficulty="2">DIFFICULT</button>
+    </div>
+
+    <script>
+        document.querySelectorAll("button").forEach(button => {
+            button.addEventListener("click" , function(){
+                const difficulty = this.dataset.difficulty;
+                localStorage.setItem("selected" , difficulty);
+                window.location.href="main.html";//so that it redirects to next page
+            })
+        })
+    </script>
+</body>
+</html>
